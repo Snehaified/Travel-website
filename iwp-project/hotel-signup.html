@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="hotel-signup.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="D1">
+      <form  action="hotel-signupmessage.php" method="post" onsubmit="return validation()">
+          <h1>Sign up</h1>
+          <label for="name">Hotel Name</label>
+          <input type="text" name="name" id="name" placeholder="Full name" required>
+          <br>
+          <br>
+          <label for="phoneNo"> Phone </label>
+          <input type="text" name="phone" id="phone" placeholder="phone number" ><br><br>
+          <label for="type">Select hotel type</label>
+          <select name="HotelType" id="HotelType">
+            <option value="none" selected disabled hidden></option>
+            <option value="Hotel"> Hotel</option>
+            <option value="Villa">Villa</option>
+            <option value="Apartment">Apartment</option>
+          </select>
+          <br><br>
+          <label for="location">Enter your Hotel Location/Address</label><br>
+          <input type="text" name="location" id="location" placeholder="Enter your location">
+          <br>
+          <label for="email">Email</label>
+          (This will be the username)
+          <br>
+          <input type="email" name="email" id="email" placeholder="Email" ><br>
+          <br>
+
+          <label for="password">Password</label><br>
+          <input type="password" placeholder="Password" name="passwordfirst" id="passwordfirst" ><br>
+  
+          <label for="psw">Confirm Password</label><br>
+          <input type="password" placeholder="Confirm Password" name="password" id="password" ><br>
+          <input type="submit"  name = "submit" value="register"><br>
+        <label>
+          <div class="D2">
+              <p>Have an account? <a href="tourist-login.html">Log in</a> </p>
+          </div>
+          <label for="nameerror" id="nameerror"></label><br>
+          <!-- <label for="phoneerror" id="phoneerror"></label>
+          <label for="typeerror" id="typeerror"></label>
+          <label for="passerror" id="passerror"></label> -->
+      </form>
+     </div> 
+     <script src="newHotelvalidate.js"></script>
+  </body>
+</html>

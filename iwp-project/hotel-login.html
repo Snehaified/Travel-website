@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Login</title>
+    <link rel="stylesheet" href="hotel-login.css" />
+  </head>
+  <body>
+    <form action="hotel-login.php" method="post" onsubmit="return validation()">
+      <div class="container">
+        <h1>Hotel Login Page</h1>
+        <div class="box1">
+          <label for="username">Username</label><br />
+          <input
+            type="email"
+            name="username"
+            id="username"
+            placeholder="Enter Username"
+            required
+          /><br />
+
+          <label for="pswd">Password</label><br />
+          <input
+            type="password"
+            name="pswd"
+            id="pswd"
+            placeholder="Enter Password"
+            required
+          /><br />
+
+          <input type="submit" name="submit" value="Login" /><br />
+          <label>
+            <input type="checkbox" checked="checked" name="remember" /> Remember
+            me
+          </label>
+        </div>
+        <div class="container2" style="background-color: #f1f1f1">
+          <span class="psw"><a href="#">Forgot password?</a></span>
+        </div>
+        <div class="signup">
+          <p>Don't have an Account?</p>
+          <a href="hotel-signup.html">Sign Up</a>
+        </div>
+      </div>
+    </form>
+
+    <script src="hotel-login.js"></script>
+  </body>
+</html>
